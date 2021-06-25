@@ -1,0 +1,206 @@
+/* ---------------------------------------------------- Media Queries ----------------------------------------------------- */
+@media screen and (max-width: 1440px) {
+    .banner-section {
+        background-size: cover;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header nav {
+        background: rgba( 255, 255, 255, 0.20 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+    }
+
+    .banner-section {
+        background-size: cover;
+        height: auto;
+    }
+    
+    footer .container .row:nth-child(2) .col-12:last-child {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner-section {
+        background-size: cover;
+        height: auto;
+    }
+
+    .nav-link.active::after {
+        margin-left: 0px;
+    }
+
+    .navbar form button {
+        padding: 0.3rem 1rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    .banner-section .box h1 {
+        font-size: 3rem;
+    }
+
+    .banner-section .box p br{
+        display: none;
+    }
+
+    .banner-section .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-section .img-container img {
+        margin-top: 2rem;
+    }
+
+    .card-section .multiple-items {
+        padding: 2rem;
+    }
+
+    .card-section .card img {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .strategy-container .strategy-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .strategy-container .strategy-img #first-img {
+        display: none;
+    }
+
+    .strategy-container .strategy-img #second-img {
+        display: block;
+    }
+
+    .strategy-container .strategy-text {
+        margin-top: 1rem;
+        padding-right: 0.75rem;
+    }
+
+    .strategy-container .strategy-text h1 {
+        align-self: center;
+    }
+
+    .strategy-container .strategy-text p {
+        align-self: center;
+        text-align: justify;
+    }
+
+    .strategy-container .strategy-text p br {
+        display: none;
+    }
+
+    .work-section .work-text-container h1 {
+        margin-top: 1rem;
+    }
+
+    footer .features-link {
+        text-align: center;
+    }
+
+    footer .services-link {
+        text-align: center;
+    }
+
+    footer .company-links {
+        text-align: center;
+    }
+
+    footer .solution-links {
+        text-align: center;
+    }
+
+    footer .container .row:nth-child(2) .col-12:last-child {
+        border-left: none;
+    }
+
+    /* ------------------------------------------------------- About Page Media Query ---------------------------------- */
+    .about-header {
+        background-size: cover;
+        height: auto;
+    }
+
+    
+    .about-header .about-box h1 {
+        font-size: 3rem;
+    }
+
+    .about-header .about-box p br{
+        display: none;
+    }
+
+    .about-header .about-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-header .about-img-container img {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner-section .container {
+        padding: 1rem 2rem;
+    }
+
+    .featured-img-section .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .card-section .multiple-items {
+        padding: 1.5rem;
+    }
+
+    .strategy-container .strategy-text p {
+        align-self: center;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+
+    .strategy-container .container-fluid .row:nth-child(3) .col-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .strategy-container .links-box a i {
+       font-size: 2rem;
+    }
+
+    .work-section .work-text-container h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .work-section .work-text-container p {
+        text-align: justify;
+    }
+
+
+    /* ----------------------------------------------- About Page Media Query --------------------------------------------- */
+
+    .about-header .container {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    footer .input-box a {
+        padding: 0 0.2rem;
+    }
+}
