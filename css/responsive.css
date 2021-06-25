@@ -4,16 +4,26 @@
         background-size: cover;
         height: auto;
     }
+
+    .about-banner-section {
+        background-size: cover;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 992px) {
     header nav {
         background: rgba( 255, 255, 255, 0.20 );
-backdrop-filter: blur( 3.5px );
--webkit-backdrop-filter: blur( 3.5px );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
     }
 
     .banner-section {
+        background-size: cover;
+        height: auto;
+    }
+
+    .about-banner-section {
         background-size: cover;
         height: auto;
     }
@@ -127,32 +137,33 @@ backdrop-filter: blur( 3.5px );
     }
 
     /* ------------------------------------------------------- About Page Media Query ---------------------------------- */
-    .about-header {
+    .about-banner-section {
         background-size: cover;
         height: auto;
+        padding-bottom: 0;
     }
-
     
-    .about-header .about-box h1 {
+    .about-banner-section .about-box h1 {
         font-size: 3rem;
     }
 
-    .about-header .about-box p br{
+    .about-banner-section.about-box p br{
         display: none;
     }
 
-    .about-header .about-img-container {
+    .about-banner-section .about-img-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .about-header .about-img-container img {
+    .about-banner-section .about-img-container img {
         margin-top: 2rem;
     }
 }
 
 @media screen and (max-width: 576px) {
+
     .banner-section .container {
         padding: 1rem 2rem;
     }
@@ -194,13 +205,40 @@ backdrop-filter: blur( 3.5px );
 
     /* ----------------------------------------------- About Page Media Query --------------------------------------------- */
 
-    .about-header .container {
+    .about-banner-section .container {
         padding: 1rem 2rem;
+    }
+
+    .about-concept-section {
+        padding: 0.75rem;
+    }
+
+    .about-concept-section .card-row .card {
+        padding: 1rem;
+    }
+
+    .about-concept-section .heading-row h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-company-section .about-company-text .about-company-box .about-company-info h1 {
+        font-size: 1.7rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .about-team-card-section .team-cards .card {
+        padding: 1rem;
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width: 324px) {
     footer .input-box a {
         padding: 0 0.2rem;
+    }
+
+    footer .input-box {
+        display: none;
     }
 }

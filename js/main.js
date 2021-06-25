@@ -84,3 +84,59 @@ $('.multiple-items').slick({
         }
       ]
   });
+
+  $('.team-cards').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    autoplay: true,
+    speed: 2000,
+    arrows: true,
+    prevArrow: '<i class="fas fa-chevron-left prev-arrow fa-2x" style="font-size: 26px; background-color: white; color: black; padding: 0.75rem 1rem; border-radius: 50%; position: absolute; top: 50%; left: 0%; z-index: 2; cursor: pointer;"></i>',
+    nextArrow: '<i class="fas fa-chevron-right next-arrow fa-2x" style="font-size: 26px; background-color: white; color: black; padding: 0.75rem 1rem; border-radius: 50%; position: absolute; top: 50%; right: 0%; z-index: 2; cursor: pointer"></i>',
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  });

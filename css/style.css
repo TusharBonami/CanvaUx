@@ -218,11 +218,11 @@ header nav .container-fluid {
 }
 
 /* read more section */
-.read-more-section {
-  background-image: url("../assets/Group\ 649@2x.png");
-  background-size: cover;
-  padding: 2.5rem 0;
-}
+/* .read-more-section {
+    background-image: url('../assets/Group\ 649@2x.png');
+    background-size: cover;
+    padding: 2.5rem 0;
+} */
 
 /* .read-more-section .read-more-text {
     position: absolute;
@@ -234,8 +234,8 @@ header nav .container-fluid {
     flex-direction: column;
     height: 450px;
 } */
-.read-more-img {
-  position: relative;
+/* .read-more-img{
+    position: relative;
 }
 
 .read-more-section .read-more-text h1 {
@@ -250,12 +250,12 @@ header nav .container-fluid {
 }
 
 .read-more-section .read-more-text a {
-  background-color: white;
-  padding: 1rem 2.75rem;
-  border-radius: 0px;
-  color: black;
-  font-size: 12px;
-}
+    background-color: white;
+    padding: 1rem 2.75rem;
+    border-radius: 0px;
+    color: black;
+    font-size: 12px;
+} */
 
 .strategy-container {
   padding-bottom: 2.5rem;
@@ -571,40 +571,49 @@ footer .row:nth-child(2) .social-links .social-btns a span {
 
 /* ---------------------------------------------------- About Page Styles ------------------------------------------------- */
 
-.about-header {
+.about-banner-section {
     background-image: url('../assets/about-header-bg.png');
     background-size: 100% 100%;
     background-position: center center;
     padding: 1.5rem 0 2rem 0;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
 }
 
-.about-header .about-box {
+.about-banner-section .container {
+    padding-bottom: 0;
+}
+
+.about-banner-section .container .row {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-banner-section .about-box {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    height: 85%;
+    height: 100%;
 }
 
-.about-header .about-box h1 {
+.about-banner-section .about-box h1 {
     text-transform: capitalize;
     font-size: 4.5rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 1rem;
+    justify-self: center;
 }
 
-.about-header .about-box p {
+.about-banner-section .about-box p {
     text-transform: capitalize;
     color:  #B7B7B7;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.about-header .about-box button {
+.about-banner-section .about-box button {
     background-color: #01d2df;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
@@ -612,240 +621,180 @@ footer .row:nth-child(2) .social-links .social-btns a span {
     border-radius: 0px;
 }
 
-.about-header .about-box .about-social-icons {
-    position: absolute;
-    bottom: 2%;
-    left: 8%;
-}
-
-.about-header .about-box .about-social-icons a i {
+.about-banner-section .about-box .about-social-icons a i {
     font-size: 1.5rem;
     color: white;
     margin-top: 1rem;
 }
 
-.about-header .about-img-container {
+.about-banner-section .container {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    height: 100%;
+}
+
+.about-banner-section .about-img-container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 93.5%;
+    height: 100%;
 }
 
-.about-header .about-img-container img {
+.about-banner-section .about-img-container img {
     object-fit: cover;
 }
 
+/* concept section */
 
-
-
-/* ---------------------------------------------------- Media Queries ----------------------------------------------------- */
-@media screen and (max-width: 1440px) {
-    .banner-section {
-        background-size: cover;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    header nav {
-        background: rgba( 255, 255, 255, 0.20 );
-backdrop-filter: blur( 3.5px );
--webkit-backdrop-filter: blur( 3.5px );
-    }
-
-    .banner-section {
-        background-size: cover;
-        height: auto;
-    }
-    
-    footer .container .row:nth-child(2) .col-12:last-child {
-        border-left: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    background-size: cover;
-    height: auto;
-  }
-
-    .banner-section {
-        background-size: cover;
-        height: auto;
-    }
-
-    .nav-link.active::after {
-        margin-left: 0px;
-    }
-
-  .navbar form button {
-    padding: 0.3rem 1rem;
-  }
-
-  nav {
-    padding: 0.5rem;
-  }
-
-    .banner-section .box h1 {
-        font-size: 3rem;
-    }
-
-    .banner-section .box p br{
-        display: none;
-    }
-
-    .banner-section .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .banner-section .img-container img {
-        margin-top: 2rem;
-    }
-
-  .card-section .multiple-items {
+.about-concept-section {
     padding: 2rem;
-  }
+}
 
-  .card-section .card img {
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
+.about-concept-section .heading-row {
+    text-align: center;
+}
 
-  .strategy-container .strategy-img {
+.about-concept-section .heading-row h1 {
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.about-concept-section .heading-row h1 span {
+    color: #01d2df;
+}
+
+.about-concept-section .card-row .card {
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: 12px;
+    border: none;
+}
+
+.about-concept-section .card-row .card .card-body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    flex-direction: column;
+}
 
-  .strategy-container .strategy-img #first-img {
+.about-concept-section .card-row .card .card-img {
+    min-height: 260px;
+}
+
+.about-concept-section .card-row .card .card-body h5 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-concept-section .card-row .card .card-body p {
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 0.8rem;
+}
+
+.about-concept-section .card-row .card .card-body a {
     display: none;
-  }
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0px;
+    transition: 0.5s;
+}
 
-  .strategy-container .strategy-img #second-img {
+.about-concept-section .card-row .card:hover {
+    transform: scale(1.05);
+}
+
+.about-concept-section .card-row .card:hover > .card-body a {
     display: block;
-  }
-
-  .strategy-container .strategy-text {
-    margin-top: 1rem;
-    padding-right: 0.75rem;
-  }
-
-  .strategy-container .strategy-text h1 {
-    align-self: center;
-  }
-
-  .strategy-container .strategy-text p {
-    align-self: center;
-    text-align: justify;
-  }
-
-  .strategy-container .strategy-text p br {
-    display: none;
-  }
-
-  .work-section .work-text-container h1 {
-    margin-top: 1rem;
-  }
-
-  footer .features-link {
-    text-align: center;
-  }
-
-  footer .services-link {
-    text-align: center;
-  }
-
-  footer .company-links {
-    text-align: center;
-  }
-
-  footer .solution-links {
-    text-align: center;
-  }
-
-    footer .container .row:nth-child(2) .col-12:last-child {
-        border-left: none;
-    }
-
-    /* ------------------------------------------------------- About Page Media Query ---------------------------------- */
-    .about-header {
-        background-size: cover;
-        height: auto;
-    }
-
-    
-    .about-header .about-box h1 {
-        font-size: 3rem;
-    }
-
-    .about-header .about-box p br{
-        display: none;
-    }
-
-    .about-header .about-img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-header .about-img-container img {
-        margin-top: 2rem;
-    }
 }
 
-@media screen and (max-width: 576px) {
-    .banner-section .container {
-        padding: 1rem 2rem;
-    }
 
-  .featured-img-section .section-heading h2 {
-    font-size: 2rem;
-  }
+.about-company-section {
+    background-image: url('../assets/Group\ 922.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem 0;
+    background-color: black;
+}
 
-  .card-section .multiple-items {
-    padding: 1.5rem;
-  }
+.about-company-section .about-company-text .about-company-box .about-company-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
-  .strategy-container .strategy-text p {
-    align-self: center;
+.about-company-section .about-company-text .about-company-box .about-company-info h6 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.about-company-section .about-company-text .about-company-box .about-company-info h1 {
+    color: white;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.about-company-section .about-company-text .about-company-box .about-company-info p {
+    color: #d8d8d8;
     text-align: justify;
-    padding: 0 1rem;
-  }
+}
 
-  .strategy-container .container-fluid .row:nth-child(3) .col-12 {
+.about-company-section .about-company-text .about-company-box .about-company-info a {
+    background-color: #01d2df;
+    color: black;
+    padding: 0.5rem 2rem;
+    border-radius: 0px;
+    margin-top: 1rem;
+
+}
+
+.about-team-section {
+    margin: 2rem 0;
+}
+
+.about-team-section .team-heading h1 {
+    font-weight: 900;
+}
+
+.about-team-section .team-heading p {
+    color: #848484;
+}
+
+.about-team-card-section {
+    margin: 0 0 2rem 0;
+}
+
+.about-team-card-section .team-cards .card {
+    border-radius: 0;   
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.about-team-card-section .team-cards .card .card-body h5 {
+    color: #171717;
+    font-weight: 700;
+}
+
+.about-team-card-section .team-cards .card .card-body p {
+    color: #848484;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.about-team-card-section .team-cards .card .card-body .member-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-  }
-
-  .strategy-container .links-box a i {
-    font-size: 2rem;
-  }
-
-  .work-section .work-text-container h1 {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-    .work-section .work-text-container p {
-        text-align: justify;
-    }
-
-
-    /* ----------------------------------------------- About Page Media Query --------------------------------------------- */
-
-    .about-header .container {
-        padding: 1rem 2rem;
-    }
 }
 
-@media screen and (max-width: 324px) {
-  footer .input-box a {
-    padding: 0 0.2rem;
-  }
+.about-team-card-section .team-cards .card .card-body .member-icons a i {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: #848484;
 }
 
